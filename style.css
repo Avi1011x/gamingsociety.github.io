@@ -1,0 +1,470 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color:black !important;
+    color: azure ;
+}
+
+#header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Image/Untitled\ design.png);
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    background-position: center;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+.container
+{
+    padding: 10px 10%;
+    
+}
+
+nav
+{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo 
+{
+    width: 60px;
+    height: auto;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a
+{
+    color: azure;
+    text-decoration: none !important;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FFDD52;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+
+.header-text
+{
+    color: azure;
+    margin-top: 10%;
+    font-size: 30px;
+    
+}
+
+.header-text h1
+{
+    font-size: 60px;
+    margin-top: 20px;
+    color: #FFDD52;
+    font-weight: 900;
+}
+
+
+
+#about
+{
+    padding: 80px 0;
+}
+
+.row
+{
+    display: flex ;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+
+.about-col-1
+{
+    flex-basis: 35%
+    
+}
+
+.about-col-1 img
+{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2
+{
+    flex-basis: 60%;
+    color: azure;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.subs
+{
+    font-size: 60px;
+    font-weight: 550;
+}
+
+.tab-titles
+{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links
+{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#FFDD52;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after
+{
+    width: 50%;
+}
+
+.tab-contents ul li
+{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span
+{
+    color: #FFDD52;
+    font-size: 20px;
+}
+
+.tab-contents
+{
+    display: none;
+}
+
+.tab-contents.active-tab
+{
+    display: block;
+}
+
+#events
+{
+    padding: 30px 0;
+    color: azure;
+}
+
+.event-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.event-list div
+{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+
+.event-list div i
+{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.event-list div h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.event-list div a
+{
+    text-decoration: none;
+    color: azure;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.event-list div:hover
+{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+.contact-left
+{
+    flex-basis: 35%;
+    color: azure;
+}
+
+.contact-right 
+{
+    flex-basis:60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.social-icons
+{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover
+{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2
+{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.contact-right form{
+    width: 100%;
+    }
+
+form input{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: azure;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+padding: 14px 60px;
+font-size: 18px;
+margin-top: 20px;
+cursor: pointer;
+color: azure;
+}
+
+.copyright
+{
+    width: 100%;
+    color: azure;
+    text-align: center;
+    padding: 20px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+nav .fas
+{
+    display: none;
+}
+
+@media only screen and (max-width: 600px)
+{
+    #header
+    {
+        background-image: url(Image/about\ \(2\).png);
+    }
+
+    .x
+    {
+        display: none;
+    }
+
+    .header-text
+    {
+        margin-top: 100%;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .header-text h1
+    {
+        font-size: 30px;
+    }
+        .header-text p 
+        {
+            font-size: 30px;
+        }
+
+    nav .fas 
+    {
+        display: block;
+        font-size: 25px;
+        color: azure;
+    }
+
+    nav ul {
+        background: #3d3d3d;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transform: right 0.5s;
+        
+    }
+
+    nav ul li
+    {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas
+    {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .subs
+    {
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2
+    {
+        flex-basis: 100%;
+    }
+
+    .about-col-1
+    {
+        margin-bottom: 30px;
+        width: 10%;
+    }
+    .about-col-2
+    {
+        font-size: 14px;
+        margin: 5%;
+    }
+
+    .tab-links
+    {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right
+    {
+        flex-basis: 100%;
+        margin: 5%;
+    }
+
+    .copyright
+    {
+        font-size: 14px;
+    }
+
+.img {
+    width: 20% !important;
+    height: 20%;
+}
+
+.aboutImg
+{
+    width: 50% !important;
+    height: auto;
+}
+
+.ytvid
+{
+        width: 336px;
+        height: 189px;
+  
+}
+
+}
+
+#msg
+{
+    color: #FFDD52;
+    margin-top: -0px;
+    display: block;
+}
+
+.pic
+{
+    display: flex;
+    padding-right: 5px;
+}
+.img
+{
+    width: 11%;
+    height: 11%;
+}
+
+.fab.fa-facebook-square, .fab.fa-discord
+{
+    font-size: 80px;
+    padding-right: 10px;
+}
+
+.video
+{
+    height: 30%;
+    width: 30%;
+}
